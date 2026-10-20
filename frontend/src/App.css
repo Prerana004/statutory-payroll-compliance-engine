@@ -1,0 +1,64 @@
+/* ===== Existing Admin / Dashboard styles ===== */
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  padding: 20px;
+}
+
+.page.dark {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* ... all your existing styles stay SAME ... */
+
+/* ===== LOGIN PAGE STYLES (ADD BELOW) ===== */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.login-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-card input,
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.login-card button {
+  background: #833ab4;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+/* 💻 Laptop Enhancement */
+@media (min-width: 768px) {
+  .login-card {
+    max-width: 420px;
+  }
+}

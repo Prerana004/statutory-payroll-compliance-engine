@@ -1,0 +1,11 @@
+export const getRole = () => localStorage.getItem("role");
+export const getToken = () => localStorage.getItem("token");
+
+export const isAdmin = () => getRole() === "admin";
+export const isSuperAdmin = () => getRole() === "superadmin";
+
+export const logout = () => {
+  localStorage.removeItem("role");
+  localStorage.removeItem("token");
+  window.location.href = "/";
+};
